@@ -4,6 +4,7 @@ class Phone {
     }
 }
 
+// SmartPhone задает общий случай класса Phone
 class SmartPhone extends Phone {
     makePhone() {
         console.log('Photo');
@@ -14,6 +15,7 @@ class SmartPhone extends Phone {
     }
 }
 
+// SamsungPhone задает более конкретный случай родительского класса SmartPhone
 class SamsungPhone extends SmartPhone {
     openShop() {
         console.log('Open Samsung Shop')
