@@ -1,3 +1,4 @@
+// Общий родительский класс
 class Phone {
     makeCalling() {
         console.log('Dzin!!!');
