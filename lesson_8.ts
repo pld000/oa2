@@ -13,7 +13,7 @@ const devicesList = new List<Device>();
 const inputDevicesList = new List<InputDevice>();
 
 // Контрвариантность
-// Метод plugIn DeviceManager<Device> сможет принять объект типа DeviceManager<InputDevice>, но не наоборот
+// Метод plugIn DeviceManager<InputDevice> сможет принять объект типа DeviceManager<Device>, но не наоборот
 class DeviceManager<T> {
     public plugIn(device: T): void {
         // ...
