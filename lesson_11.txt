@@ -1,0 +1,29 @@
+// Используемый мною язык (js), не поддерживает множественное наследование, поэтому пример на python
+
+// Я не очень знаком с синтаксисом python, но None - подсвечивается как служебное слово, поэтому выбрал другое имя
+class NoneNull:
+    pass
+
+class General:
+    pass
+
+class Any(General, NoneNull):
+    pass
+
+// Приведите пример полиморфного использования Void.
+// Этот пример будет на java, так как проще будет показать с использованием ad-hoc полиморфизма
+Void = new NoneNull();
+
+public class ActionHandler {
+    public void ActionHandler() {}
+
+    public Any action(Any arg) {
+        return arg;
+    }
+
+    public Void action(None arg) {
+        System.out.println("It is None class");
+        return Void;
+    }
+}
+
