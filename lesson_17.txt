@@ -1,0 +1,5 @@
+Класс WirelessChargePhone "является" потомком класса SimplePhone. Меняем отношение "является" на "содержит" и убираем
+класс WirelessChargePhone: класс SimplePhone содержит поле chargeInterface возможных типов WiredCharge, WirelessCharge
+
+Класс LemonCake и LemonCakeWithPicture "являются" потомками класса Cake. Добавляем в класс Cake поле addons типа Addon[].
+И получаем что класс Cake "содержит" любые Addon'ы (начинка, картина на торте, надпись, цвет ...)
