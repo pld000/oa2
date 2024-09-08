@@ -1,0 +1,8 @@
+1) Наследование подтипов (subtype inheritance)
+Класс Weapon разделим на две независимые подкатегории Bow и Sword
+
+2) Наследование с ограничением (restriction inheritance)
+Для класса Sword добавим специализации: LongSword, Katana
+
+3) Наследование с расширением (extension inheritance)
+Расширяем класс Sword классом LightingSword
