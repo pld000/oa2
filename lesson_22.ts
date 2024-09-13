@@ -1,9 +1,12 @@
-class Processor {
+/**
+ * Различные устройства могут быть вставлены в материнскую плату, могут быть различные комбинации этих устройств.
+ * К тому же, родительские сущности разных устройств, автономны и каждый играет свою роль.
+ * */
 
+class Processor {
 }
 
 class VideoCard {
-
 }
 
 class Ram {
@@ -21,16 +24,18 @@ class Motherboard {
   }
 }
 
-class AmdProcessor extends Processor {}
-class AbcVideoCard extends VideoCard {}
-class XyzRam extends Ram {}
+class AmdProcessor extends Processor {
+}
+
+class AbcVideoCard extends VideoCard {
+}
+
+class XyzRam extends Ram {
+}
 
 class AtxMotherboard extends Motherboard {
   constructor() {
     super(AmdProcessor, AbcVideoCard, XyzRam);
   }
 }
-/**
- * Различные устройства могут быть вставлены в материнскую плату, могут быть различные комбинации этих устройств.
- * К тому же, родительские сущности разных устройств, автономны и каждый играет свою роль.
- * */
+
